@@ -1,0 +1,17 @@
+{
+  "name": "BookingProject",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass ./scss/_main.scss ./css/style.css --output-style compressed"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "node-sass": "^4.9.1"
+  },
+  "description": ""
+}
