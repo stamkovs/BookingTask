@@ -63,6 +63,16 @@ img {
 
       .item-image {
         border-radius: 3px;
+
+        img {
+          backface-visibility: hidden;
+          transition: opacity 0.4s;
+
+          &:hover {
+            opacity: 0.8;
+            transition: opacity 0.4s;
+          }
+        }
       }
 
       .item-description {

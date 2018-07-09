@@ -2,6 +2,7 @@
   display: block;
   position: relative;
   background: $darkblue;
+  z-index: 1;
 
   @media screen and (min-width: 481px) {
     display: none;
@@ -56,7 +57,7 @@ span.toggle {
 @media (max-width: 480px) {
 
   .main-menu {
-    height: 50px;
+    height: 48px;
   }
   .container-menu {
     width: 100%;
@@ -81,11 +82,12 @@ span.toggle {
   }
 
   .hamburger-menu {
+    background: chocolate;
     display: block;
     text-align: center;
     padding-right: 60px;
     float: none;
-    width: calc(100% - 75px);
+    width: calc(100% - 76px);
   }
   .burger-1, .burger-2, .burger-3 {
     display: block;

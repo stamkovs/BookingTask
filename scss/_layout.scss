@@ -2,13 +2,23 @@
   .main-container {
 
     .content {
-      margin-top: 150px;
 
       .item {
         border-bottom: 2px solid $darkblue;
         margin-bottom: 20px;
         text-align: center;
 
+        .item-image {
+          .fancybox {
+            pointer-events: none;
+          }
+
+          img {
+            &:hover {
+              opacity: 1;
+            }
+          }
+        }
         .item-price {
           display: inline-block;
         }
