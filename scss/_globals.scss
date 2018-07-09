@@ -38,66 +38,54 @@ img {
     h3 {
       color: white;
     }
-    .filter {
-      background: none;
-      border: none;
-      color: white;
-      cursor: pointer;
-      font-weight: bold;
+  }
+}
 
-      &:active, &:focus {
-        box-shadow: none;
-        outline: 0;
+.content {
+  .item {
+
+    /*Override for isotope filtering Plugin*/
+    left: unset !important;
+    position: relative !important;
+    top: unset !important;
+    transition: 0.4s all;
+
+    .item-image {
+      border-radius: 3px;
+
+      img {
+        backface-visibility: hidden;
+        transition: opacity 0.4s;
+
+        &:hover {
+          opacity: 0.8;
+          transition: opacity 0.4s;
+        }
       }
     }
-  }
 
-  .content {
-    .item {
-
-      /*Override for isotope filtering Plugin*/
-      left: unset !important;
-      position: relative !important;
-      top: unset !important;
-      transition: 0.4s all;
-
-      .item-image {
-        border-radius: 3px;
-
-        img {
-          backface-visibility: hidden;
-          transition: opacity 0.4s;
-
-          &:hover {
-            opacity: 0.8;
-            transition: opacity 0.4s;
-          }
-        }
+    .item-description {
+      .item-title, .item-location {
+        margin: 0;
       }
-
-      .item-description {
-        .item-title, .item-location {
-          margin: 0;
-        }
-        .item-title {
-          margin-top: 10px;
-          margin-bottom: 5px;
-        }
+      .item-title {
+        margin-top: 10px;
+        margin-bottom: 5px;
       }
+    }
 
-      .item-price {
-        background: $darkblue;
-        border-radius: 5px;
-        color: white;
-        font-size: 24px;
-        font-weight: bold;
-        margin: 20px 10px;
-        padding: 5px;
-      }
+    .item-price {
+      background: $darkblue;
+      border-radius: 5px;
+      color: white;
+      font-size: 24px;
+      font-weight: bold;
+      margin: 20px 10px;
+      padding: 5px;
+    }
 
-      .item-rating {
-        width: calc(100% + 20px);
-      }
+    .item-rating {
+      width: calc(100% + 20px);
     }
   }
 }

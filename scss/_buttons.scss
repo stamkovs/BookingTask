@@ -1,0 +1,30 @@
+.filter {
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  display: block;
+  font-weight: bold;
+  line-height: 20px;
+  text-align: left;
+  transition: 0.4s all;
+  width: auto;
+
+  &:after {
+    display: block;
+    content: '';
+    border-bottom: solid 3px white;
+    transform: scaleX(0);
+    transition: transform 250ms ease-in-out;
+  }
+
+  &:hover:after, &.active:after {
+    transform: scaleX(1);
+  }
+
+  &.active {
+    padding-left: 30px;
+    font-size: 16px;
+    transition: 0.4s all;
+  }
+}
