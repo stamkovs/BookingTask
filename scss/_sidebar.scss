@@ -1,0 +1,81 @@
+.sidebar, .core-menu {
+  .filter {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    display: block;
+    font-weight: bold;
+    line-height: 20px;
+    text-align: left;
+    width: auto;
+
+    &:after {
+      display: block;
+      content: '';
+      border-bottom: solid 3px white;
+      transform: scaleX(0);
+      transition: transform 250ms ease-in-out;
+    }
+
+    &:hover:after {
+      transform: scaleX(1);
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .sidebar {
+    display: none !important;
+  }
+  .core-menu .filter {
+    margin: 10px 20px;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 991px) {
+  .sidebar {
+    background: ghostwhite;
+    height: 100px;
+    left: 50%;
+    overflow: hidden;
+    position: fixed;
+    text-align: center;
+    top: 0;
+    transform: translateX(-50%);
+    width: 100%;
+
+    .filter {
+      margin: 0 10px 10px 10px;
+      display: inline-block;
+    }
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .sidebar {
+    flex-basis: 20%;
+    height: 100%;
+    margin: 0.5%;
+    margin-top: 0;
+    position: fixed;
+    width: 16vw;
+
+    h3 {
+      border-bottom: 2px solid white;
+      color: white;
+      margin-top: 10px;
+      padding-bottom: 10px;
+      text-align: center;
+    }
+
+    .filter {
+      margin-bottom: 10px;
+      padding-left: 20px;
+
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+    }
+  }
+}

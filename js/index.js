@@ -71,7 +71,7 @@ var element = $('<div>' +
     '            </div>' +
     '            <div class="item-price"></div>' +
     '        </div>' +
-    '        </div>'); //Equivalent: $(document.createElement('img'))
+    '        </div>');
 
 var villaCounter=0;
 var houseCounter=0;
@@ -107,3 +107,8 @@ $('.filter-all').append(' (' + items.length + ')');
 $('.filter-house').append(' (' + houseCounter + ')');
 $('.filter-villa').append(' (' + villaCounter + ')');
 $('.filter-appartment').append(' (' + appartmentCounter + ')');
+
+
+//TODO: check the code and maybe do refactoring
+//TODO: made separete sidebar.scss
+//TODO: add hover and active effects on the sidebar
