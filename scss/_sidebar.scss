@@ -8,6 +8,7 @@
     font-weight: bold;
     line-height: 20px;
     text-align: left;
+    transition: 0.4s all;
     width: auto;
 
     &:after {
@@ -18,8 +19,14 @@
       transition: transform 250ms ease-in-out;
     }
 
-    &:hover:after {
+    &:hover:after, &.active:after {
       transform: scaleX(1);
+    }
+
+    &.active {
+      padding-left: 30px;
+      font-size: 16px;
+      transition: 0.4s all;
     }
   }
 }

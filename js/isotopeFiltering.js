@@ -5,4 +5,6 @@ var $grid = $('.content').isotope({
 $('.sidebar, .core-menu').on( 'click touch', 'button', function() {
     var filterValue = $(this).attr('data-filter');
     $grid.isotope({ filter: filterValue });
+    $('.filter').removeClass("active");
+    $(this).addClass("active");
 });

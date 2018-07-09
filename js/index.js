@@ -107,8 +107,3 @@ $('.filter-all').append(' (' + items.length + ')');
 $('.filter-house').append(' (' + houseCounter + ')');
 $('.filter-villa').append(' (' + villaCounter + ')');
 $('.filter-appartment').append(' (' + appartmentCounter + ')');
-
-
-//TODO: check the code and maybe do refactoring
-//TODO: made separete sidebar.scss
-//TODO: add hover and active effects on the sidebar
