@@ -69,11 +69,13 @@ span.toggle {
     width: 100%;
   }
   .core-menu {
-    float: right;
-    width: 100%;
     background: $darkblue;
-    margin: auto;
+    cursor: default;
     display: none;
+    float: right;
+    margin: auto;
+    width: 100%;
+    z-index: 2;
   }
 
   .hamburger-menu {
